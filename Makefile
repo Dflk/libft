@@ -73,7 +73,8 @@ SRCS =	ft_atoi.c \
 		ft_printbits.c \
 		ft_swap.c \
 		ft_min.c \
-		ft_max.c
+		ft_max.c \
+		gnl/get_next_line.c
 NAME = libft.a
 FLAGS = -Wall -Werror -Wextra
 INCDIR = ./includes/
@@ -90,7 +91,7 @@ ART =  "\n   / /   /  _/ __ )/ ____/_  __/\n  / /    / // __  / /_    / /   \n /
 all: $(NAME)
 
 %.o: %.c
-	@gcc $(FLAGS) -I$(INCDIR) -c $<
+	@gcc $(FLAGS) -I$(INCDIR) -c $< -o $@
 
 $(NAME): $(OBJ)
 	@echo $(C_BLUE)$(ART)$(C_END)
