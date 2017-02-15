@@ -17,6 +17,7 @@ SRCS =	ft_atoi.c \
 		ft_isascii.c \
 		ft_isdigit.c \
 		ft_isprint.c \
+		ft_isspace.c \
 		ft_itoa.c \
 		ft_memalloc.c \
 		ft_memccpy.c \
@@ -74,6 +75,9 @@ SRCS =	ft_atoi.c \
 		ft_swap.c \
 		ft_min.c \
 		ft_max.c \
+		ft_strtab.c \
+		ft_printtab.c \
+		free.c \
 		gnl/get_next_line.c
 NAME = libft.a
 FLAGS = -Wall -Werror -Wextra

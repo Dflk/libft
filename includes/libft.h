@@ -47,6 +47,7 @@ int				ft_isdigit(int c);
 int				ft_isalnum(int c);
 int				ft_isascii(int c);
 int				ft_isprint(int c);
+int				ft_isspace(char c);
 
 int				ft_toupper(int c);
 int				ft_tolower(int c);
@@ -97,5 +98,12 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *n);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+char			**ft_strtabadd(char **res, char *line);
+void			ft_printtab(char **tab);
+char			**ft_strtabadd_free(char **res, char *line);
+size_t			ft_strtablen(char **res);
+
+int				ft_freesafe(void **free, size_t n);
 
 #endif
